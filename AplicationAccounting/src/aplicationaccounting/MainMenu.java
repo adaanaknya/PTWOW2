@@ -36,7 +36,7 @@ public class MainMenu extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         ButtonDataClient = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        ButtonFormDataVendor = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jProgressBar3 = new javax.swing.JProgressBar();
 
@@ -107,10 +107,15 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(255, 51, 51));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yoggg\\Downloads\\data vendor.png")); // NOI18N
-        jButton6.setText("Data Vendor");
+        ButtonFormDataVendor.setBackground(new java.awt.Color(255, 51, 51));
+        ButtonFormDataVendor.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        ButtonFormDataVendor.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yoggg\\Downloads\\data vendor (2).png")); // NOI18N
+        ButtonFormDataVendor.setText("Data Vendor");
+        ButtonFormDataVendor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonFormDataVendorActionPerformed(evt);
+            }
+        });
 
         jButton8.setBackground(new java.awt.Color(255, 255, 102));
         jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yoggg\\Downloads\\back (1).png")); // NOI18N
@@ -126,7 +131,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(ButtonDataClient, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ButtonFormDataVendor, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(DataProduckButton, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -154,7 +159,7 @@ public class MainMenu extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createSequentialGroup()
                                     .addComponent(ButtonDataClient, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(ButtonFormDataVendor, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(72, Short.MAX_VALUE))
@@ -207,6 +212,13 @@ public class MainMenu extends javax.swing.JFrame {
        this.dispose();
     }//GEN-LAST:event_ButtonDataClientActionPerformed
 
+    private void ButtonFormDataVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonFormDataVendorActionPerformed
+       FormDataVendor js4 = new FormDataVendor();
+       js4.show();
+       js4.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_ButtonFormDataVendorActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -245,11 +257,11 @@ public class MainMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonDataClient;
+    private javax.swing.JButton ButtonFormDataVendor;
     private javax.swing.JButton DataProduckButton;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

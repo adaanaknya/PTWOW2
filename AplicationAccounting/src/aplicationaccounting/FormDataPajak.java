@@ -31,7 +31,7 @@ public class FormDataPajak extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        ButtonHomeDP = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -53,10 +53,10 @@ public class FormDataPajak extends javax.swing.JFrame {
 
         jButton4.setText("Data Nama");
 
-        jButton11.setText("Home");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        ButtonHomeDP.setText("Home");
+        ButtonHomeDP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                ButtonHomeDPActionPerformed(evt);
             }
         });
 
@@ -74,7 +74,7 @@ public class FormDataPajak extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 674, Short.MAX_VALUE)
-                .addComponent(jButton11)
+                .addComponent(ButtonHomeDP)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -82,7 +82,7 @@ public class FormDataPajak extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton11)
+                    .addComponent(ButtonHomeDP)
                     .addComponent(jButton3)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -153,9 +153,12 @@ public class FormDataPajak extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    private void ButtonHomeDPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonHomeDPActionPerformed
+       MainMenu home = new MainMenu();
+        home.show();
+        home.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_ButtonHomeDPActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,8 +196,8 @@ public class FormDataPajak extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ButtonHomeDP;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
