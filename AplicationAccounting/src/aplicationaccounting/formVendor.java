@@ -4,17 +4,25 @@
  */
 package aplicationaccounting;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import aplicationaccounting.AplicationAccounting;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Yoggg
  */
 public class formVendor extends javax.swing.JFrame {
-
+    Connection con = null;
+    ResultSet rs = null;
+    PreparedStatement pst = null;
     /**
      * Creates new form DataProduk
      */
     public formVendor() {
         initComponents();
+        con = AplicationAccounting.connectDB();
     }
 
     /**
@@ -38,11 +46,11 @@ public class formVendor extends javax.swing.JFrame {
         Label_JenisProduk = new javax.swing.JLabel();
         Label_Stok = new javax.swing.JLabel();
         Label_Deskripsi = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        Nama_vendor = new javax.swing.JTextField();
+        Alamat = new javax.swing.JTextField();
         btn_simpanFormVendor = new javax.swing.JButton();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        Email = new javax.swing.JTextField();
+        No_telp = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -113,12 +121,15 @@ public class formVendor extends javax.swing.JFrame {
 
         Label_Deskripsi.setText("Alamat                :");
 
-        jTextField5.setText("jTextField1");
-
-        jTextField6.setText("jTextField1");
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        Nama_vendor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                Nama_vendorActionPerformed(evt);
+            }
+        });
+
+        Alamat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AlamatActionPerformed(evt);
             }
         });
 
@@ -130,10 +141,6 @@ public class formVendor extends javax.swing.JFrame {
                 btn_simpanFormVendorActionPerformed(evt);
             }
         });
-
-        jTextField7.setText("jTextField1");
-
-        jTextField8.setText("jTextField1");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -155,17 +162,17 @@ public class formVendor extends javax.swing.JFrame {
                                 .addComponent(Label_Deskripsi, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(3, 3, 3)))
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
-                            .addComponent(jTextField6)))
+                            .addComponent(Email, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+                            .addComponent(Alamat)))
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
                             .addComponent(Label_JenisProduk, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField8))
+                            .addComponent(No_telp))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
                             .addComponent(Label_NamaProduk, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(Nama_vendor, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -174,19 +181,19 @@ public class formVendor extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Label_NamaProduk)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Nama_vendor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Label_JenisProduk)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(No_telp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Label_Stok)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Alamat, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addComponent(Label_Deskripsi, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -256,12 +263,16 @@ public class formVendor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void btn_simpanFormVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanFormVendorActionPerformed
-        // TODO add your handling code here:
+        regisvendor();
     }//GEN-LAST:event_btn_simpanFormVendorActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void AlamatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlamatActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_AlamatActionPerformed
+
+    private void Nama_vendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nama_vendorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Nama_vendorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -305,11 +316,35 @@ public class formVendor extends javax.swing.JFrame {
         });
     }
 
+    public void regisvendor(){
+        try{
+           String insert = "INSERT INTO Vendor (Nama_vendor, No_telp, Email, Alamat) VALUES (?,?,?,?)";
+           
+           pst = con.prepareStatement(insert);
+           
+           pst.setString(1, Nama_vendor.getText());
+           pst.setString(2, No_telp.getText());
+           pst.setString(3, Email.getText());
+           pst.setString(4, Alamat.getText());
+           
+           pst.execute();
+           
+           JOptionPane.showMessageDialog(null, "Berhasil Registrasi!!", "Alert", JOptionPane.INFORMATION_MESSAGE);
+           
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,e);
+        }
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JTextField Alamat;
+    public static javax.swing.JTextField Email;
     private javax.swing.JLabel Label_Deskripsi;
     private javax.swing.JLabel Label_JenisProduk;
     private javax.swing.JLabel Label_NamaProduk;
     private javax.swing.JLabel Label_Stok;
+    public static javax.swing.JTextField Nama_vendor;
+    public static javax.swing.JTextField No_telp;
     private javax.swing.JButton btn_simpanFormVendor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
@@ -321,9 +356,5 @@ public class formVendor extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JProgressBar jProgressBar1;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }

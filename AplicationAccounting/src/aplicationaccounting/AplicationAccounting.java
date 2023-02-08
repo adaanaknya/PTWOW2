@@ -4,7 +4,6 @@
  */
 package aplicationaccounting;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.DriverManager;
 /**
  *
@@ -12,34 +11,24 @@ import java.sql.DriverManager;
  */
 public class AplicationAccounting {
 
-    /**
-     * @param args the command line arguments
-     */
+    Connection con = null;
+    
+    public static Connection connectDB(){    
+        try{
+            Class.forName("org.sqlite.JDBC");
+            Connection con = DriverManager.getConnection("jdbc:sqlite:akunting.sqlite");
+            System.out.println("Connection Success!!");
+            
+            return con;
+        }catch(Exception e){
+            System.out.println("Connection Failed"+e);
+            return null;
+        }
+    }
+       
     public static void main(String[] args) {
         // TODO code application logic here
-      connect();
+      connectDB();
     }
-    public static void connect(){
-        Connection conn = null;
-        try{
-            String url = "jdbc:sqlite:temp.db";
-            conn = DriverManager.getConnection(url);
-            System.out.println("Connect berhasil bangsat ");
-        }
-        catch(SQLException e){
-         System.out.println(e.getMessage());
-    }finally{
-            try{
-            if(conn!=null){
-            conn.close();
-            }
-            }catch(SQLException ex){
-            System.out.println(ex.getMessage());
-          }
-    
-    }
-        
-    }
-    
     
 }
