@@ -53,6 +53,11 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
         });
 
         jButton1.setText("Cetak Invoice");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Data Gudang");
 
@@ -98,6 +103,7 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
         jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
         btn_simpan1.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,17 +151,17 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(1141, 1141, 1141)
+                .addComponent(btn_simpan1)
+                .addGap(0, 1261, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1141, 1141, 1141)
-                        .addComponent(btn_simpan1))
+                        .addGap(1051, 1051, 1051)
+                        .addComponent(btn_simpan2, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1207, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(1051, 1051, 1051)
-                .addComponent(btn_simpan2, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -237,6 +243,10 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
     private void btn_simpan2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_simpan2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
