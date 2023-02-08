@@ -37,6 +37,7 @@ public class FormDataPajak extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 102));
 
@@ -99,11 +100,9 @@ public class FormDataPajak extends javax.swing.JFrame {
         jPanel2.setBorder(new javax.swing.border.MatteBorder(null));
 
         jButton5.setBackground(new java.awt.Color(204, 204, 0));
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yoggg\\Downloads\\tambah.png")); // NOI18N
         jButton5.setText("Tambah Data Pajak");
 
         jButton6.setBackground(new java.awt.Color(0, 204, 204));
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yoggg\\Downloads\\culun.png")); // NOI18N
         jButton6.setText("Lihat Data Pajak");
         jButton6.setActionCommand("jButton6");
 

@@ -42,6 +42,7 @@ public class MainMenu extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
@@ -76,10 +77,9 @@ public class MainMenu extends javax.swing.JFrame {
         jProgressBar2.setBackground(new java.awt.Color(255, 51, 51));
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         DataProduckButton.setBackground(new java.awt.Color(0, 255, 204));
-        DataProduckButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yoggg\\Downloads\\buku-removebg-preview.png")); // NOI18N
         DataProduckButton.setText("Data Produk");
         DataProduckButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
