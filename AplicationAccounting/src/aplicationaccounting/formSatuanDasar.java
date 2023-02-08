@@ -3,18 +3,29 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package aplicationaccounting;
-
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import aplicationaccounting.AplicationAccounting;
+import static aplicationaccounting.formVendor.Alamat;
+import static aplicationaccounting.formVendor.Email;
+import static aplicationaccounting.formVendor.Nama_vendor;
+import static aplicationaccounting.formVendor.No_telp;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Yoggg
  */
 public class formSatuanDasar extends javax.swing.JFrame {
-
+    Connection con = null;
+    ResultSet rs = null;
+    PreparedStatement pst = null;
     /**
      * Creates new form DataProduk
      */
     public formSatuanDasar() {
         initComponents();
+        con = AplicationAccounting.connectDB();
     }
 
     /**
@@ -35,7 +46,7 @@ public class formSatuanDasar extends javax.swing.JFrame {
         jProgressBar1 = new javax.swing.JProgressBar();
         jPanel4 = new javax.swing.JPanel();
         Label_NamaProduk = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        Satuan_Dasar = new javax.swing.JTextField();
         btn_simpanFormSatuanDasar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -102,10 +113,10 @@ public class formSatuanDasar extends javax.swing.JFrame {
 
         Label_NamaProduk.setText("Jenis Satuan Dasar                :");
 
-        jTextField1.setText("jTextField1");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        Satuan_Dasar.setText("jTextField1");
+        Satuan_Dasar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                Satuan_DasarActionPerformed(evt);
             }
         });
 
@@ -126,7 +137,7 @@ public class formSatuanDasar extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addComponent(Label_NamaProduk)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Satuan_Dasar, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(2002, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -138,7 +149,7 @@ public class formSatuanDasar extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Satuan_Dasar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Label_NamaProduk))
                 .addGap(275, 275, 275)
                 .addComponent(btn_simpanFormSatuanDasar)
@@ -205,12 +216,12 @@ public class formSatuanDasar extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void Satuan_DasarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Satuan_DasarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_Satuan_DasarActionPerformed
 
     private void btn_simpanFormSatuanDasarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanFormSatuanDasarActionPerformed
-        // TODO add your handling code here:
+    regissatuandasar();        
     }//GEN-LAST:event_btn_simpanFormSatuanDasarActionPerformed
 
     /**
@@ -502,9 +513,27 @@ public class formSatuanDasar extends javax.swing.JFrame {
             }
         });
     }
+    
+     public void regissatuandasar(){
+        try{
+           String insert = "INSERT INTO Produk (Satuan_Dasar) VALUES (?)";
+           
+           pst = con.prepareStatement(insert);
+           
+           pst.setString(1, Satuan_Dasar.getText());
+
+           pst.execute();
+           
+           JOptionPane.showMessageDialog(null, "Berhasil Registrasi!!", "Alert", JOptionPane.INFORMATION_MESSAGE);
+           
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,e);
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Label_NamaProduk;
+    private javax.swing.JTextField Satuan_Dasar;
     private javax.swing.JButton btn_simpanFormSatuanDasar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
@@ -516,6 +545,5 @@ public class formSatuanDasar extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JProgressBar jProgressBar1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
