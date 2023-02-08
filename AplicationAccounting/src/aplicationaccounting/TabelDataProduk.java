@@ -8,6 +8,7 @@ package aplicationaccounting;
  *
  * @author Yoggg
  */
+<<<<<<< HEAD
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import java.sql.Connection;
@@ -20,6 +21,13 @@ public class TabelDataProduk extends javax.swing.JFrame {
   PreparedStatement pst = null;
   ResultSet rs = null ;
   
+=======
+public class TabelDataProduk extends javax.swing.JFrame {
+
+    /**
+     * Creates new form DataProduk
+     */
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
     public TabelDataProduk() {
         initComponents();
     }
@@ -39,12 +47,22 @@ public class TabelDataProduk extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
+<<<<<<< HEAD
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         TblDataProduck = new javax.swing.JTable();
         btn_simpan3 = new javax.swing.JButton();
+=======
+        jProgressBar1 = new javax.swing.JProgressBar();
+        jPanel4 = new javax.swing.JPanel();
+        btn_simpan1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,7 +100,11 @@ public class TabelDataProduk extends javax.swing.JFrame {
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 608, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1944, Short.MAX_VALUE)
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
                 .addComponent(jButton11)
                 .addGap(18, 18, 18))
         );
@@ -100,6 +122,7 @@ public class TabelDataProduk extends javax.swing.JFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
+<<<<<<< HEAD
         jPanel2.setBackground(new java.awt.Color(0, 204, 255));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -127,6 +150,22 @@ public class TabelDataProduk extends javax.swing.JFrame {
         jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         TblDataProduck.setModel(new javax.swing.table.DefaultTableModel(
+=======
+        jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
+
+        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+
+        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpan1.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpan1.setText("Simpan");
+        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_simpan1ActionPerformed(evt);
+            }
+        });
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -145,6 +184,7 @@ public class TabelDataProduk extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null}
             },
             new String [] {
+<<<<<<< HEAD
                 "ID Produk ", "Vendor", "Nama Produk", "Jenis Produk", "Stock", "Satuan Dasar", "Harga Beli"
             }
         ) {
@@ -166,12 +206,19 @@ public class TabelDataProduk extends javax.swing.JFrame {
                 btn_simpan3ActionPerformed(evt);
             }
         });
+=======
+                "ID Client", "Nama Client ", "No telepon", "Email ", "Alamat", "Edit", "Hapus"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(962, 962, 962)
@@ -179,6 +226,12 @@ public class TabelDataProduk extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 895, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_simpan1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 895, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -186,15 +239,45 @@ public class TabelDataProduk extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addGap(24, 24, 24)
                 .addComponent(btn_simpan3)
                 .addContainerGap(573, Short.MAX_VALUE))
+=======
+                .addGap(27, 27, 27)
+                .addComponent(btn_simpan1)
+                .addContainerGap(564, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(0, 204, 255));
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setText("Tambah Vendor");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                .addGap(18, 18, 18))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(9, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -203,10 +286,21 @@ public class TabelDataProduk extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+            .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -214,6 +308,16 @@ public class TabelDataProduk extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+=======
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
         );
 
         pack();
@@ -227,9 +331,15 @@ public class TabelDataProduk extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
+<<<<<<< HEAD
     private void btn_simpan3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_simpan3ActionPerformed
+=======
+    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_simpan1ActionPerformed
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
 
     /**
      * @param args the command line arguments
@@ -257,6 +367,24 @@ public class TabelDataProduk extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(TabelDataProduk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+<<<<<<< HEAD
+=======
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -267,8 +395,12 @@ public class TabelDataProduk extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JTable TblDataProduck;
     private javax.swing.JButton btn_simpan3;
+=======
+    private javax.swing.JButton btn_simpan1;
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
@@ -278,6 +410,12 @@ public class TabelDataProduk extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
+<<<<<<< HEAD
     private javax.swing.JScrollPane jScrollPane1;
+=======
+    private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
     // End of variables declaration//GEN-END:variables
 }

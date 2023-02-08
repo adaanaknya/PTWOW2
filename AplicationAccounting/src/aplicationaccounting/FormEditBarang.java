@@ -56,6 +56,10 @@ public class FormEditBarang extends javax.swing.JFrame {
         btn_simpan1 = new javax.swing.JButton();
         jComboBox5 = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
+<<<<<<< HEAD
+=======
+        jLabel1 = new javax.swing.JLabel();
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -103,13 +107,22 @@ public class FormEditBarang extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+=======
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton11)
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton3)
                         .addComponent(jButton1)
                         .addComponent(jButton2)
+<<<<<<< HEAD
                         .addComponent(jButton4))
                     .addComponent(jButton11))
+=======
+                        .addComponent(jButton4)))
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
@@ -214,7 +227,11 @@ public class FormEditBarang extends javax.swing.JFrame {
                                 .addComponent(Label_HargaBeli, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< HEAD
                         .addContainerGap(1833, Short.MAX_VALUE))))
+=======
+                        .addContainerGap(1827, Short.MAX_VALUE))))
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -295,6 +312,13 @@ public class FormEditBarang extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 255));
 
+<<<<<<< HEAD
+=======
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setText("Edit Produk");
+
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
         jPanel3.setBackground(new java.awt.Color(0, 204, 255));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -323,6 +347,7 @@ public class FormEditBarang extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -333,6 +358,28 @@ public class FormEditBarang extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                .addGap(41, 41, 41)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -346,7 +393,11 @@ public class FormEditBarang extends javax.swing.JFrame {
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+=======
+                        .addGap(0, 0, Short.MAX_VALUE)))
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -448,6 +499,10 @@ public class FormEditBarang extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
+<<<<<<< HEAD
+=======
+    private javax.swing.JLabel jLabel1;
+>>>>>>> 4480c25c0fe3c9d4332305476d536fb1a821fe33
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
