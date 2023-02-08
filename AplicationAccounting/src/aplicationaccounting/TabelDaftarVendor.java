@@ -36,7 +36,7 @@ public class TabelDaftarVendor extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btn_simpan3 = new javax.swing.JButton();
+        btn_simpanTabelDaftarVendor = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -97,6 +97,7 @@ public class TabelDaftarVendor extends javax.swing.JFrame {
         jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -122,12 +123,12 @@ public class TabelDaftarVendor extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        btn_simpan3.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan3.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan3.setText("Simpan");
-        btn_simpan3.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanTabelDaftarVendor.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanTabelDaftarVendor.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanTabelDaftarVendor.setText("Simpan");
+        btn_simpanTabelDaftarVendor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan3ActionPerformed(evt);
+                btn_simpanTabelDaftarVendorActionPerformed(evt);
             }
         });
 
@@ -139,7 +140,7 @@ public class TabelDaftarVendor extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 895, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_simpan3, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(btn_simpanTabelDaftarVendor, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(0, 1575, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -148,7 +149,7 @@ public class TabelDaftarVendor extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btn_simpan3)
+                .addComponent(btn_simpanTabelDaftarVendor)
                 .addContainerGap(573, Short.MAX_VALUE))
         );
 
@@ -212,9 +213,9 @@ public class TabelDaftarVendor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void btn_simpan3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan3ActionPerformed
+    private void btn_simpanTabelDaftarVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanTabelDaftarVendorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan3ActionPerformed
+    }//GEN-LAST:event_btn_simpanTabelDaftarVendorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -379,7 +380,7 @@ public class TabelDaftarVendor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_simpan3;
+    private javax.swing.JButton btn_simpanTabelDaftarVendor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;

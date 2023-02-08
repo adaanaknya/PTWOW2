@@ -161,14 +161,27 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
+<<<<<<< Updated upstream
                           <EmptySpace min="-2" pref="1051" max="-2" attributes="0"/>
                           <Component id="btn_simpan2" min="-2" pref="154" max="-2" attributes="0"/>
+=======
+                          <EmptySpace min="-2" pref="1141" max="-2" attributes="0"/>
+                          <Component id="btn_simpanTabelDaftarPenjualan" min="-2" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane1" min="-2" pref="1207" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+<<<<<<< Updated upstream
+=======
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="1051" max="-2" attributes="0"/>
+                  <Component id="btn_CetakPenjualan" min="-2" pref="154" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -177,18 +190,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  <Component id="btn_simpan2" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn_CetakPenjualan" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="263" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btn_simpan1" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn_simpanTabelDaftarPenjualan" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="525" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btn_simpan1">
+        <Component class="javax.swing.JButton" name="btn_simpanTabelDaftarPenjualan">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -199,7 +212,7 @@
             <Property name="text" type="java.lang.String" value="Simpan"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_simpan1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_simpanTabelDaftarPenjualanActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -298,7 +311,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="btn_simpan2">
+        <Component class="javax.swing.JButton" name="btn_CetakPenjualan">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="ff" red="33" type="rgb"/>
@@ -306,7 +319,7 @@
             <Property name="text" type="java.lang.String" value="Cetak Penjualan"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_simpan2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_CetakPenjualanActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

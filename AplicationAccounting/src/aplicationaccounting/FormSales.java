@@ -51,7 +51,7 @@ public class FormSales extends javax.swing.JFrame {
         jComboBox3 = new javax.swing.JComboBox<>();
         jTextField4 = new javax.swing.JTextField();
         jComboBox4 = new javax.swing.JComboBox<>();
-        btn_simpan1 = new javax.swing.JButton();
+        btn_simpanFormSales = new javax.swing.JButton();
         Label_Stok1 = new javax.swing.JLabel();
         Label_Stok2 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
@@ -180,12 +180,12 @@ public class FormSales extends javax.swing.JFrame {
             }
         });
 
-        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan1.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan1.setText("Simpan");
-        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanFormSales.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanFormSales.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanFormSales.setText("Simpan");
+        btn_simpanFormSales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan1ActionPerformed(evt);
+                btn_simpanFormSalesActionPerformed(evt);
             }
         });
 
@@ -266,7 +266,7 @@ public class FormSales extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(btn_simpan1)
+                                .addComponent(btn_simpanFormSales)
                                 .addGroup(jPanel4Layout.createSequentialGroup()
                                     .addComponent(Label_Stok2)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -319,7 +319,7 @@ public class FormSales extends javax.swing.JFrame {
                         .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Label_Stok2)))
                 .addGap(33, 33, 33)
-                .addComponent(btn_simpan1)
+                .addComponent(btn_simpanFormSales)
                 .addGap(329, 329, 329))
         );
 
@@ -406,9 +406,9 @@ public class FormSales extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+    private void btn_simpanFormSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanFormSalesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan1ActionPerformed
+    }//GEN-LAST:event_btn_simpanFormSalesActionPerformed
 
     private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
         // TODO add your handling code here:
@@ -512,7 +512,7 @@ public class FormSales extends javax.swing.JFrame {
     private javax.swing.JLabel Label_Stok1;
     private javax.swing.JLabel Label_Stok2;
     private javax.swing.JLabel Label_Vendor;
-    private javax.swing.JButton btn_simpan1;
+    private javax.swing.JButton btn_simpanFormSales;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;

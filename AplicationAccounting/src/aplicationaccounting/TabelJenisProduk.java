@@ -34,7 +34,7 @@ public class TabelJenisProduk extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
         jProgressBar1 = new javax.swing.JProgressBar();
         jPanel4 = new javax.swing.JPanel();
-        btn_simpan1 = new javax.swing.JButton();
+        btn_simpanTabelJenisProduk = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
@@ -97,13 +97,14 @@ public class TabelJenisProduk extends javax.swing.JFrame {
         jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan1.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan1.setText("Simpan");
-        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanTabelJenisProduk.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanTabelJenisProduk.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanTabelJenisProduk.setText("Simpan");
+        btn_simpanTabelJenisProduk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan1ActionPerformed(evt);
+                btn_simpanTabelJenisProdukActionPerformed(evt);
             }
         });
 
@@ -138,7 +139,7 @@ public class TabelJenisProduk extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_simpan1)
+                    .addComponent(btn_simpanTabelJenisProduk)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 895, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -148,7 +149,7 @@ public class TabelJenisProduk extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
-                .addComponent(btn_simpan1)
+                .addComponent(btn_simpanTabelJenisProduk)
                 .addContainerGap(564, Short.MAX_VALUE))
         );
 
@@ -215,9 +216,9 @@ public class TabelJenisProduk extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+    private void btn_simpanTabelJenisProdukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanTabelJenisProdukActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan1ActionPerformed
+    }//GEN-LAST:event_btn_simpanTabelJenisProdukActionPerformed
 
     /**
      * @param args the command line arguments
@@ -286,7 +287,7 @@ public class TabelJenisProduk extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_simpan1;
+    private javax.swing.JButton btn_simpanTabelJenisProduk;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;

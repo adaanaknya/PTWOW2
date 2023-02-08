@@ -44,7 +44,7 @@ public class formVendor extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jComboBox3 = new javax.swing.JComboBox<>();
         jComboBox4 = new javax.swing.JComboBox<>();
-        btn_simpan1 = new javax.swing.JButton();
+        btn_simpanFormVendor = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -105,6 +105,7 @@ public class formVendor extends javax.swing.JFrame {
         jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Label_ID.setText("ID Vendor             :");
 
@@ -141,12 +142,12 @@ public class formVendor extends javax.swing.JFrame {
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan1.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan1.setText("Simpan");
-        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanFormVendor.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanFormVendor.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanFormVendor.setText("Simpan");
+        btn_simpanFormVendor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan1ActionPerformed(evt);
+                btn_simpanFormVendorActionPerformed(evt);
             }
         });
 
@@ -180,7 +181,7 @@ public class formVendor extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_simpan1)
+                .addComponent(btn_simpanFormVendor)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -210,7 +211,7 @@ public class formVendor extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addComponent(Label_Deskripsi, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(83, 83, 83)
-                .addComponent(btn_simpan1)
+                .addComponent(btn_simpanFormVendor)
                 .addContainerGap(484, Short.MAX_VALUE))
         );
 
@@ -278,9 +279,9 @@ public class formVendor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+    private void btn_simpanFormVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanFormVendorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan1ActionPerformed
+    }//GEN-LAST:event_btn_simpanFormVendorActionPerformed
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
@@ -338,7 +339,7 @@ public class formVendor extends javax.swing.JFrame {
     private javax.swing.JLabel Label_JenisProduk;
     private javax.swing.JLabel Label_NamaProduk;
     private javax.swing.JLabel Label_Stok;
-    private javax.swing.JButton btn_simpan1;
+    private javax.swing.JButton btn_simpanFormVendor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;

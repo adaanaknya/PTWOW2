@@ -214,9 +214,9 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Component id="btn_simpan1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btn_simpanFormEditSales" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                          <Component id="btn_simpan" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btn_hapusFormEditSales" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jComboBox6" min="-2" pref="204" max="-2" attributes="0"/>
                                   </Group>
@@ -269,13 +269,10 @@
                               <Component id="Label_HargaBeli" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jTextField6" min="-2" pref="50" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jTextField6" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="Label_Stok" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -298,8 +295,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btn_simpan1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btn_simpan" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn_simpanFormEditSales" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn_hapusFormEditSales" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -349,7 +346,7 @@
             <Property name="text" type="java.lang.String" value="Termin                   :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_simpan">
+        <Component class="javax.swing.JButton" name="btn_hapusFormEditSales">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -360,7 +357,7 @@
             <Property name="text" type="java.lang.String" value="Hapus"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_simpanActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_hapusFormEditSalesActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="Label_HargaBeli2">
@@ -450,7 +447,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_simpan1">
+        <Component class="javax.swing.JButton" name="btn_simpanFormEditSales">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -461,7 +458,7 @@
             <Property name="text" type="java.lang.String" value="Simpan"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_simpan1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_simpanFormEditSalesActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="Label_Stok1">

@@ -8,12 +8,12 @@ package aplicationaccounting;
  *
  * @author Yoggg
  */
-public class formEditVendor1 extends javax.swing.JFrame {
+public class formEditVendor extends javax.swing.JFrame {
 
     /**
      * Creates new form DataProduk
      */
-    public formEditVendor1() {
+    public formEditVendor() {
         initComponents();
     }
 
@@ -44,8 +44,8 @@ public class formEditVendor1 extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jComboBox3 = new javax.swing.JComboBox<>();
         jComboBox4 = new javax.swing.JComboBox<>();
-        btn_simpan1 = new javax.swing.JButton();
-        btn_simpan2 = new javax.swing.JButton();
+        btn_hapusFormEditVendor = new javax.swing.JButton();
+        btn_simpanFormEditVendor = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -106,6 +106,7 @@ public class formEditVendor1 extends javax.swing.JFrame {
         jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Label_ID.setText("ID Vendor             :");
 
@@ -142,21 +143,21 @@ public class formEditVendor1 extends javax.swing.JFrame {
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan1.setForeground(new java.awt.Color(255, 51, 51));
-        btn_simpan1.setText("Hapus");
-        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+        btn_hapusFormEditVendor.setBackground(new java.awt.Color(0, 0, 0));
+        btn_hapusFormEditVendor.setForeground(new java.awt.Color(255, 51, 51));
+        btn_hapusFormEditVendor.setText("Hapus");
+        btn_hapusFormEditVendor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan1ActionPerformed(evt);
+                btn_hapusFormEditVendorActionPerformed(evt);
             }
         });
 
-        btn_simpan2.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan2.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan2.setText("Simpan");
-        btn_simpan2.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanFormEditVendor.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanFormEditVendor.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanFormEditVendor.setText("Simpan");
+        btn_simpanFormEditVendor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan2ActionPerformed(evt);
+                btn_simpanFormEditVendorActionPerformed(evt);
             }
         });
 
@@ -190,9 +191,9 @@ public class formEditVendor1 extends javax.swing.JFrame {
                 .addContainerGap(1945, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_simpan2)
+                .addComponent(btn_simpanFormEditVendor)
                 .addGap(35, 35, 35)
-                .addComponent(btn_simpan1)
+                .addComponent(btn_hapusFormEditVendor)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -223,8 +224,8 @@ public class formEditVendor1 extends javax.swing.JFrame {
                         .addComponent(Label_Deskripsi, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(83, 83, 83)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_simpan1)
-                    .addComponent(btn_simpan2))
+                    .addComponent(btn_hapusFormEditVendor)
+                    .addComponent(btn_simpanFormEditVendor))
                 .addContainerGap(484, Short.MAX_VALUE))
         );
 
@@ -292,9 +293,9 @@ public class formEditVendor1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+    private void btn_hapusFormEditVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_hapusFormEditVendorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan1ActionPerformed
+    }//GEN-LAST:event_btn_hapusFormEditVendorActionPerformed
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
@@ -304,9 +305,9 @@ public class formEditVendor1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
-    private void btn_simpan2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan2ActionPerformed
+    private void btn_simpanFormEditVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanFormEditVendorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan2ActionPerformed
+    }//GEN-LAST:event_btn_simpanFormEditVendorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -325,14 +326,30 @@ public class formEditVendor1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(formEditVendor1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(formEditVendor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(formEditVendor1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(formEditVendor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(formEditVendor1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(formEditVendor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(formEditVendor1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(formEditVendor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -353,7 +370,7 @@ public class formEditVendor1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new formEditVendor1().setVisible(true);
+                new formEditVendor().setVisible(true);
             }
         });
     }
@@ -364,8 +381,8 @@ public class formEditVendor1 extends javax.swing.JFrame {
     private javax.swing.JLabel Label_JenisProduk;
     private javax.swing.JLabel Label_NamaProduk;
     private javax.swing.JLabel Label_Stok;
-    private javax.swing.JButton btn_simpan1;
-    private javax.swing.JButton btn_simpan2;
+    private javax.swing.JButton btn_hapusFormEditVendor;
+    private javax.swing.JButton btn_simpanFormEditVendor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;

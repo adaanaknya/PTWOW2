@@ -38,8 +38,8 @@ public class formEditProduk extends javax.swing.JFrame {
         Label_NamaProduk = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jComboBox4 = new javax.swing.JComboBox<>();
-        btn_simpan1 = new javax.swing.JButton();
-        btn_simpan2 = new javax.swing.JButton();
+        btn_HapusFormEditProduk = new javax.swing.JButton();
+        btn_simpanFormEditProduk = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -100,6 +100,7 @@ public class formEditProduk extends javax.swing.JFrame {
         jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Label_ID.setText("ID Pajak                    :");
 
@@ -114,21 +115,21 @@ public class formEditProduk extends javax.swing.JFrame {
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan1.setForeground(new java.awt.Color(255, 51, 51));
-        btn_simpan1.setText("Hapus");
-        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+        btn_HapusFormEditProduk.setBackground(new java.awt.Color(0, 0, 0));
+        btn_HapusFormEditProduk.setForeground(new java.awt.Color(255, 51, 51));
+        btn_HapusFormEditProduk.setText("Hapus");
+        btn_HapusFormEditProduk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan1ActionPerformed(evt);
+                btn_HapusFormEditProdukActionPerformed(evt);
             }
         });
 
-        btn_simpan2.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan2.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan2.setText("Simpan");
-        btn_simpan2.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanFormEditProduk.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanFormEditProduk.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanFormEditProduk.setText("Simpan");
+        btn_simpanFormEditProduk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan2ActionPerformed(evt);
+                btn_simpanFormEditProdukActionPerformed(evt);
             }
         });
 
@@ -148,9 +149,9 @@ public class formEditProduk extends javax.swing.JFrame {
                 .addContainerGap(1939, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_simpan2)
+                .addComponent(btn_simpanFormEditProduk)
                 .addGap(35, 35, 35)
-                .addComponent(btn_simpan1)
+                .addComponent(btn_HapusFormEditProduk)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -166,8 +167,8 @@ public class formEditProduk extends javax.swing.JFrame {
                     .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(256, 256, 256)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_simpan1)
-                    .addComponent(btn_simpan2))
+                    .addComponent(btn_HapusFormEditProduk)
+                    .addComponent(btn_simpanFormEditProduk))
                 .addContainerGap(484, Short.MAX_VALUE))
         );
 
@@ -235,13 +236,13 @@ public class formEditProduk extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+    private void btn_HapusFormEditProdukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_HapusFormEditProdukActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan1ActionPerformed
+    }//GEN-LAST:event_btn_HapusFormEditProdukActionPerformed
 
-    private void btn_simpan2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan2ActionPerformed
+    private void btn_simpanFormEditProdukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanFormEditProdukActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan2ActionPerformed
+    }//GEN-LAST:event_btn_simpanFormEditProdukActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,8 +345,8 @@ public class formEditProduk extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Label_ID;
     private javax.swing.JLabel Label_NamaProduk;
-    private javax.swing.JButton btn_simpan1;
-    private javax.swing.JButton btn_simpan2;
+    private javax.swing.JButton btn_HapusFormEditProduk;
+    private javax.swing.JButton btn_simpanFormEditProduk;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;

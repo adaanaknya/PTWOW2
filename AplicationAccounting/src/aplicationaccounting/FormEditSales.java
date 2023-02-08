@@ -42,7 +42,7 @@ public class FormEditSales extends javax.swing.JFrame {
         Label_Deskripsi = new javax.swing.JLabel();
         Label_HargaBeli = new javax.swing.JLabel();
         Label_HargaBeli1 = new javax.swing.JLabel();
-        btn_simpan = new javax.swing.JButton();
+        btn_hapusFormEditSales = new javax.swing.JButton();
         Label_HargaBeli2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
@@ -52,7 +52,7 @@ public class FormEditSales extends javax.swing.JFrame {
         jComboBox3 = new javax.swing.JComboBox<>();
         jTextField4 = new javax.swing.JTextField();
         jComboBox4 = new javax.swing.JComboBox<>();
-        btn_simpan1 = new javax.swing.JButton();
+        btn_simpanFormEditSales = new javax.swing.JButton();
         Label_Stok1 = new javax.swing.JLabel();
         Label_Stok2 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
@@ -120,6 +120,7 @@ public class FormEditSales extends javax.swing.JFrame {
         jProgressBar1.setBackground(new java.awt.Color(255, 0, 51));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Label_ID.setText("ID Pembelian                   :");
 
@@ -137,12 +138,12 @@ public class FormEditSales extends javax.swing.JFrame {
 
         Label_HargaBeli1.setText("Termin                   :");
 
-        btn_simpan.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan.setForeground(new java.awt.Color(255, 0, 0));
-        btn_simpan.setText("Hapus");
-        btn_simpan.addActionListener(new java.awt.event.ActionListener() {
+        btn_hapusFormEditSales.setBackground(new java.awt.Color(0, 0, 0));
+        btn_hapusFormEditSales.setForeground(new java.awt.Color(255, 0, 0));
+        btn_hapusFormEditSales.setText("Hapus");
+        btn_hapusFormEditSales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpanActionPerformed(evt);
+                btn_hapusFormEditSalesActionPerformed(evt);
             }
         });
 
@@ -184,12 +185,12 @@ public class FormEditSales extends javax.swing.JFrame {
             }
         });
 
-        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan1.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan1.setText("Simpan");
-        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanFormEditSales.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanFormEditSales.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanFormEditSales.setText("Simpan");
+        btn_simpanFormEditSales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan1ActionPerformed(evt);
+                btn_simpanFormEditSalesActionPerformed(evt);
             }
         });
 
@@ -270,9 +271,9 @@ public class FormEditSales extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel4Layout.createSequentialGroup()
-                                        .addComponent(btn_simpan1)
+                                        .addComponent(btn_simpanFormEditSales)
                                         .addGap(27, 27, 27)
-                                        .addComponent(btn_simpan))
+                                        .addComponent(btn_hapusFormEditSales))
                                     .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
                                 .addComponent(Label_HargaBeli1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -310,11 +311,9 @@ public class FormEditSales extends javax.swing.JFrame {
                         .addGap(39, 39, 39)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Label_HargaBeli)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(20, 20, 20))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Label_Stok)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -332,8 +331,8 @@ public class FormEditSales extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(75, 75, 75)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn_simpan1)
-                            .addComponent(btn_simpan))))
+                            .addComponent(btn_simpanFormEditSales)
+                            .addComponent(btn_hapusFormEditSales))))
                 .addGap(327, 327, 327))
         );
 
@@ -416,17 +415,17 @@ public class FormEditSales extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void btn_simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanActionPerformed
+    private void btn_hapusFormEditSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_hapusFormEditSalesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpanActionPerformed
+    }//GEN-LAST:event_btn_hapusFormEditSalesActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+    private void btn_simpanFormEditSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanFormEditSalesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan1ActionPerformed
+    }//GEN-LAST:event_btn_simpanFormEditSalesActionPerformed
 
     private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
         // TODO add your handling code here:
@@ -510,8 +509,8 @@ public class FormEditSales extends javax.swing.JFrame {
     private javax.swing.JLabel Label_Stok1;
     private javax.swing.JLabel Label_Stok2;
     private javax.swing.JLabel Label_Vendor;
-    private javax.swing.JButton btn_simpan;
-    private javax.swing.JButton btn_simpan1;
+    private javax.swing.JButton btn_hapusFormEditSales;
+    private javax.swing.JButton btn_simpanFormEditSales;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;

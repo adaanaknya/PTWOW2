@@ -34,10 +34,10 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
         jProgressBar1 = new javax.swing.JProgressBar();
         jPanel4 = new javax.swing.JPanel();
-        btn_simpan1 = new javax.swing.JButton();
+        btn_simpanTabelDaftarPenjualan = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btn_simpan2 = new javax.swing.JButton();
+        btn_CetakPenjualan = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -105,12 +105,12 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
         jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btn_simpan1.setBackground(new java.awt.Color(0, 0, 0));
-        btn_simpan1.setForeground(new java.awt.Color(255, 255, 255));
-        btn_simpan1.setText("Simpan");
-        btn_simpan1.addActionListener(new java.awt.event.ActionListener() {
+        btn_simpanTabelDaftarPenjualan.setBackground(new java.awt.Color(0, 0, 0));
+        btn_simpanTabelDaftarPenjualan.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpanTabelDaftarPenjualan.setText("Simpan");
+        btn_simpanTabelDaftarPenjualan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan1ActionPerformed(evt);
+                btn_simpanTabelDaftarPenjualanActionPerformed(evt);
             }
         });
 
@@ -138,11 +138,11 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        btn_simpan2.setBackground(new java.awt.Color(51, 255, 51));
-        btn_simpan2.setText("Cetak Penjualan");
-        btn_simpan2.addActionListener(new java.awt.event.ActionListener() {
+        btn_CetakPenjualan.setBackground(new java.awt.Color(51, 255, 51));
+        btn_CetakPenjualan.setText("Cetak Penjualan");
+        btn_CetakPenjualan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_simpan2ActionPerformed(evt);
+                btn_CetakPenjualanActionPerformed(evt);
             }
         });
 
@@ -157,22 +157,34 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                         .addGap(1051, 1051, 1051)
                         .addComponent(btn_simpan2, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1207, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                        .addGap(1141, 1141, 1141)
+                        .addComponent(btn_simpanTabelDaftarPenjualan))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1207, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(1051, 1051, 1051)
+                .addComponent(btn_CetakPenjualan, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+>>>>>>> Stashed changes
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(btn_simpan2)
+                .addComponent(btn_CetakPenjualan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btn_simpan1)
+                .addComponent(btn_simpanTabelDaftarPenjualan)
                 .addContainerGap(525, Short.MAX_VALUE))
         );
 
@@ -236,13 +248,13 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void btn_simpan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan1ActionPerformed
+    private void btn_simpanTabelDaftarPenjualanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanTabelDaftarPenjualanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan1ActionPerformed
+    }//GEN-LAST:event_btn_simpanTabelDaftarPenjualanActionPerformed
 
-    private void btn_simpan2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpan2ActionPerformed
+    private void btn_CetakPenjualanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CetakPenjualanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_simpan2ActionPerformed
+    }//GEN-LAST:event_btn_CetakPenjualanActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -347,8 +359,8 @@ public class TabelDaftarPenjualan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_simpan1;
-    private javax.swing.JButton btn_simpan2;
+    private javax.swing.JButton btn_CetakPenjualan;
+    private javax.swing.JButton btn_simpanTabelDaftarPenjualan;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
