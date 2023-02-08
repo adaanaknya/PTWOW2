@@ -156,37 +156,37 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="Label_Stok1" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="321" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="Label_JenisProduk" min="-2" pref="139" max="-2" attributes="0"/>
+                              <Component id="Label_HargaBeli" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                              <Component id="Label_Stok" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                              <Component id="Label_Deskripsi" min="-2" pref="139" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextField6" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
+                              </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="Label_JenisProduk" min="-2" pref="139" max="-2" attributes="0"/>
-                                      <Component id="Label_HargaBeli" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
-                                      <Component id="Label_Stok" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
-                                      <Component id="Label_Deskripsi" min="-2" pref="139" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jTextField8" alignment="1" min="-2" pref="204" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jComboBox3" max="32767" attributes="0"/>
+                                          <Component id="jTextField7" min="-2" pref="204" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jTextField8" alignment="1" min="-2" pref="204" max="-2" attributes="0"/>
-                                              <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="jComboBox3" max="32767" attributes="0"/>
-                                                  <Component id="jTextField7" min="-2" pref="204" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jTextField9" min="-2" pref="81" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="jTextField6" alignment="0" min="-2" pref="292" max="-2" attributes="0"/>
-                                      <Component id="jTextField5" min="-2" pref="292" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jTextField9" min="-2" pref="81" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="Label_Stok1" min="-2" pref="139" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="Label_NamaProduk" min="-2" pref="137" max="-2" attributes="0"/>
@@ -196,12 +196,13 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="Label_Vendor" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jComboBox2" min="-2" pref="290" max="-2" attributes="0"/>
+                                  <Component id="jComboBox2" min="-2" pref="255" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
+                          <EmptySpace min="49" pref="49" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace pref="134" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="Label_HargaBeli2" min="-2" pref="102" max="-2" attributes="0"/>
@@ -222,7 +223,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="1401" max="-2" attributes="0"/>
+                  <EmptySpace pref="1401" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
