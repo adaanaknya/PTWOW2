@@ -76,7 +76,7 @@ public class TabelDataProduk extends javax.swing.JFrame {
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1944, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 2370, Short.MAX_VALUE)
                 .addComponent(jButton11)
                 .addGap(18, 18, 18))
         );
@@ -98,6 +98,7 @@ public class TabelDataProduk extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
         jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel4.setMaximumSize(new java.awt.Dimension(1920, 1080));
 
         btn_simpanTabelDataProduk.setBackground(new java.awt.Color(0, 0, 0));
         btn_simpanTabelDataProduk.setForeground(new java.awt.Color(255, 255, 255));
@@ -144,7 +145,7 @@ public class TabelDataProduk extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1207, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 1263, Short.MAX_VALUE))
+                .addGap(0, 1689, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
